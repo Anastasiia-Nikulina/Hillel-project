@@ -12,10 +12,12 @@
         background-color: $grey;
         border: 1px solid white;
     }
+
     &__group-text-inset {
         width: 260px;
 
     }
+
     &__group-text {
         font-size: 24px;
         font-weight: 500;
@@ -32,8 +34,10 @@
         line-height: 26px;
         color: $text;
     }
+
     & .group-company_uppercase {
         text-transform: uppercase;
     }
+
 
 }

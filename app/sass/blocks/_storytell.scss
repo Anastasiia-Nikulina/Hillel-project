@@ -1,5 +1,5 @@
 .storytell {
-    padding: 40px 0 55px;
+    padding: 37px 0 53px;
     border-bottom: 4px solid $separator;
 
 
@@ -12,6 +12,24 @@
         text-transform: uppercase;
         color: $blue;
         text-decoration: none;
+
+        &::after {
+            content: "";
+            width: 12px;
+            height: 12px;
+            background-image: url(../../img/link-arrow-blue.svg);
+            color: $blue;
+            background-repeat: no-repeat;
+            background-position: center;
+            display: inline-flex;
+            vertical-align: -1px;
+            padding-right: 5px;
+        }
+
+        &:hover {
+            color: $magenta;
+        }
+
     }
 
     &__title {
@@ -27,7 +45,7 @@
 
         & .group-item {
             width: 33.333%;
-            padding: 0 19px 28px;
+            padding: 0 19px 42px;
 
             & a {
                 font-size: 0;
@@ -40,7 +58,7 @@
             }
 
             &__wrap {
-                padding: 20px;
+                padding: 15px 20px;
             }
 
             &__title {
@@ -57,18 +75,18 @@
                 letter-spacing: 1px;
                 text-transform: uppercase;
                 color: $text;
-                padding-bottom: 20px;
+                padding-bottom: 18px;
                 border-bottom: 4px solid $separator;
                 padding-top: 10px;
             }
 
             &__text-inset {
-                width: 372px;
+                width: 375px;
             }
 
             &__text {
                 font-weight: 500;
-                padding-top: 20px;
+                padding-top: 19px;
                 font-size: 16px;
                 line-height: 22px;
                 color: #000000;
@@ -79,6 +97,7 @@
     &__btn-wrap {
         display: flex;
         justify-content: center;
+        margin-top: 10px;
 
     }
     &__btn {

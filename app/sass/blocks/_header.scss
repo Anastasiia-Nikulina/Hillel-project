@@ -19,7 +19,6 @@
         border-radius: 50%;
         background-color: #E6E6F0;
         display: inline-block;
-        margin-right: 14px;
     }
 
 
@@ -36,7 +35,8 @@
             margin-right: 8px;
 
 
-            &__item a {
+
+            & .lang-switcher-ref {
                 text-transform: uppercase;
                 font-weight: 700;
                 font-size: 12px;
@@ -56,16 +56,23 @@
 
 
             &__address {
-                margin: 0 10px;
+                margin-right: 10px;
 
                 & a {
                     font-size: 16px;
                     line-height: 19px;
                     color: $white;
+
+                    &::before {
+                        vertical-align: 2px;
+                        margin-right: 8px;
+                    }
                 }
             }
 
             &__tel a {
+                padding-bottom: 4px;
+                padding-right: 10px;
                 font-weight: 700;
                 font-size: 16px;
                 line-height: 19px;
@@ -74,33 +81,52 @@
 
                 &::before {
                     vertical-align: 2px;
+                    margin-right: 18px;
                 }
             }
 
-            &__fb-logo a::before {
-                vertical-align: 6px;
-                margin-left: 10px;
+            &__fb-logo {
+            padding-top: 3px;
+
+                & a::before {
+                    vertical-align: 9px;
+                    margin-right: 7px;
+
+                }
             }
         }
 
 
-.main-menu {
-    grid-area: nav;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    padding-top: 10px;
+    .main-menu {
+        grid-area: nav;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding-top: 10px;
 
 
-    &__item {
-        text-decoration: none;
-        font-weight: 500;
-        font-size: 18px;
-        line-height: 21px;
-        text-align: right;
-        color: $white;
-        padding-left: 15px;
+        &__item {
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 21px;
+            text-align: right;
+            color: $white;
+            padding-left: 12px;
+            padding-top: 2px;
+        }
+
+        & a:hover {
+            color: $magenta;
+        }
     }
-}
 
 }
+
+@media (max-width: 767px) {
+
+}
+
+@media (max-width: 375px) {
+
+}
+
