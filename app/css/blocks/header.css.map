@@ -1,0 +1,1 @@
+{"version":3,"sources":["blocks/header.scss","blocks/header.css"],"names":[],"mappings":"AAAA;EACI,iBAAiB;ACCrB","file":"header.css","sourcesContent":[".header {\n    padding-top: 49px;\n //   background-color: $background-gradient;\n}\n",".header {\n  padding-top: 49px;\n}\n"]}

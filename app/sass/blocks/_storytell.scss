@@ -1,0 +1,100 @@
+.storytell {
+    padding: 40px 0 55px;
+    border-bottom: 4px solid $separator;
+
+
+
+    &__ref {
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: $blue;
+        text-decoration: none;
+    }
+
+    &__title {
+        padding-top: 3px;
+        padding-bottom: 40px;
+    }
+
+    &__group {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -19px ;
+
+
+        & .group-item {
+            width: 33.333%;
+            padding: 0 19px 28px;
+
+            & a {
+                font-size: 0;
+            }
+
+            &__img {
+                width: 100%;
+                height: 233px;
+                object-fit: contain;
+            }
+
+            &__wrap {
+                padding: 20px;
+            }
+
+            &__title {
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 21px;
+                color: $blue;
+            }
+
+            &__date {
+                font-weight: 700;
+                font-size: 12px;
+                line-height: 14px;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+                color: $text;
+                padding-bottom: 20px;
+                border-bottom: 4px solid $separator;
+                padding-top: 10px;
+            }
+
+            &__text-inset {
+                width: 372px;
+            }
+
+            &__text {
+                font-weight: 500;
+                padding-top: 20px;
+                font-size: 16px;
+                line-height: 22px;
+                color: #000000;
+            }
+        }
+    }
+
+    &__btn-wrap {
+        display: flex;
+        justify-content: center;
+
+    }
+    &__btn {
+        cursor: pointer;
+        background: #24A3FF;
+        box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5);
+        border-style: none;
+        border-radius: 12px;
+        padding: 16px 78px 17px;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 17px;
+        text-align: center;
+        color: $white;
+    }
+
+
+
+}

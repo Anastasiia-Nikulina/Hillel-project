@@ -1,0 +1,85 @@
+.companies {
+    background-color: $white;
+
+    &__title {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: $navy;
+        padding-bottom: 29px;
+        text-align: center;
+    }
+
+    &__list {
+        height: 360px;
+        display: grid;
+        grid-template-rows: repeat(3, 33.33%);
+        grid-template-columns: repeat(4, 25%);
+        grid-gap: 0;
+        list-style: none;
+        padding: 0;
+    }
+
+    &__list-item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    & .list-item_blue {
+        background-color: #1C4280;
+    }
+
+    & .list-item_dark {
+        background-color: #143646;
+    }
+
+    & .list-item_orange {
+        background-color: #F48B30;
+    }
+
+    & .list-item_violet {
+        background-color: #9E4DC3;
+    }
+
+    & .list-item_orange2 {
+        background-color: #FD9339;
+    }
+
+    & .list-item_gray {
+        background-color: #E2E2E4;
+    }
+
+    & .list-item_red {
+        background-color: #C71C36;
+    }
+
+    & .list-item_lightblue {
+        background-color: #DCF3F9;
+    }
+
+    & .list-item_grey2 {
+        background-color: #EAEAEA;
+    }
+
+    & .list-item_darkviolet {
+        background-color: #282240;
+    }
+
+    & .list-item_darkblue {
+        background-color: #1D4568;
+    }
+
+    & .list-item_black {
+        background-color: #000000;
+    }
+
+    &__list-ref {
+        padding: 10px;
+
+    }
+
+}

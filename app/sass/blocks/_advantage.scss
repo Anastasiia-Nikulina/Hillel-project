@@ -1,0 +1,76 @@
+.advantage {
+    padding-top: 80px 0;
+    background: $supersoft-gradient;
+    border-radius: 0px 0px 12px 12px;
+
+    &__services a {
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        opacity: 0.5;
+
+        &::after {
+            content: "";
+            width: 12px;
+            height: 12px;
+            background-image: url(../../img/link-arrow.svg);
+            background-repeat: no-repeat;
+            background-position: center;
+            display: inline-flex;
+            padding-right: 14px;
+        }
+    }
+
+
+    &__title {
+        padding: 3px 0 68px;
+    }
+
+    &__group {
+        display: flex;
+        margin: 0 -20px;
+        flex-wrap: wrap;
+
+        & .group-item {
+            width: 33.333%;
+            padding: 0 20px;
+            margin-bottom: 58px;
+
+            &__img {
+                padding: 14px;
+                background-color: $white;
+                width: 92px;
+                height: 92px;
+                border-radius: 24px;
+                vertical-align: middle;
+
+                &:last-child {
+                    padding: 21px;
+                }
+            }
+
+
+            &__title {
+                font-style: normal;
+                font-weight: 500;
+                font-size: 24px;
+                line-height: 28px;
+                color: $dark-blue;
+                padding: 20px 0 15px;
+            }
+
+            &__text {
+                font-size: 18px;
+                line-height: 26px;
+                color: $white;
+
+            }
+        }
+
+    }
+
+}

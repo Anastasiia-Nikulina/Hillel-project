@@ -1,0 +1,106 @@
+.header {
+    padding-top: 49px;
+    padding-bottom: 63px;
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: min-content auto;
+    grid-template-areas: "logo info"
+        "logo nav";
+
+
+    .logo {
+        grid-area: logo;
+    }
+
+    & a:not(.lang-switcher-ref):not(.main-menu__item):not(.logo-ref)::before {
+        content: "";
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background-color: #E6E6F0;
+        display: inline-block;
+        margin-right: 14px;
+    }
+
+
+    .top-info {
+        grid-area: info;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+
+        & .lang-switcher {
+            list-style: none;
+            display: inline-flex;
+            margin-right: 8px;
+
+
+            &__item a {
+                text-transform: uppercase;
+                font-weight: 700;
+                font-size: 12px;
+                line-height: 14px;
+                text-align: center;
+                letter-spacing: 1px;
+                color: $white;
+                margin-left: 10px;
+
+                &:active {
+                    background-color: $magenta;
+                    padding: 5px;
+                    border-radius: 8px;
+                }
+            }
+        }
+
+
+            &__address {
+                margin: 0 10px;
+
+                & a {
+                    font-size: 16px;
+                    line-height: 19px;
+                    color: $white;
+                }
+            }
+
+            &__tel a {
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 19px;
+                color: $white;
+                text-decoration: none;
+
+                &::before {
+                    vertical-align: 2px;
+                }
+            }
+
+            &__fb-logo a::before {
+                vertical-align: 6px;
+                margin-left: 10px;
+            }
+        }
+
+
+.main-menu {
+    grid-area: nav;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-top: 10px;
+
+
+    &__item {
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 21px;
+        text-align: right;
+        color: $white;
+        padding-left: 15px;
+    }
+}
+
+}

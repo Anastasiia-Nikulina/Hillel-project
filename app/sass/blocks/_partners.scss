@@ -1,0 +1,39 @@
+.partners {
+    padding-bottom: 95px;
+
+    &__group {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__group-item {
+        width: 33.33%;
+        padding: 17px 20px 20px 20px;
+        background-color: $grey;
+        border: 1px solid white;
+    }
+    &__group-text-inset {
+        width: 260px;
+
+    }
+    &__group-text {
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 28px;
+        display: flex;
+        align-items: flex-end;
+        color: $soft-violet;
+        padding-bottom: 20px;
+    }
+
+    &__group-company {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 26px;
+        color: $text;
+    }
+    & .group-company_uppercase {
+        text-transform: uppercase;
+    }
+
+}
