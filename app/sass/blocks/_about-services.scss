@@ -1,0 +1,67 @@
+.about-services {
+    padding: 80px 0 100px;
+
+    &__wrap {
+        display: flex;
+        justify-content: center;
+    }
+
+
+    &__item_left {
+        width: 50%;
+        margin-right: 42px;
+    }
+
+    &__item-intro {
+        font-size: 21px;
+        line-height: 30px;
+        color: #000000;
+        padding-top: 20px;
+    }
+
+    &__item_right {
+        width: 33.33%;
+    }
+
+    &__item-group {
+        border-left: 4px solid #E6E6F0;
+        padding-left: 20px;
+    }
+
+    &__item-highlight {
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 42px;
+        color: #F0145A;
+
+        &::before {
+            content: "";
+            padding-right: 6px;
+            width: 32px;
+            height: 32px;
+            display: inline-block;
+            vertical-align: -4px;
+            background-repeat: no-repeat;
+        }
+
+        &_icon01::before {
+            background-image: url(../../img/flag-icon.svg);
+        }
+
+        &_icon02::before {
+            background-image: url(../../img/briefcase-icon.svg);
+        }
+
+        &_icon03::before {
+            background-image: url(../../img/star-icon.svg);
+        }
+
+    }
+
+    &__item-text {
+        font-size: 18px;
+        line-height: 21px;
+        color: $navy;
+        padding-bottom: 40px;
+    }
+}

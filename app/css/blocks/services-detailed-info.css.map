@@ -1,0 +1,1 @@
+{"version":3,"sources":["blocks/services-detailed-info.scss","blocks/services-detailed-info.css"],"names":[],"mappings":"AAAA;EACI,gBAAgB;ACCpB","file":"services-detailed-info.css","sourcesContent":[".advantage {\n    background: none;}\n",".advantage {\n  background: none;\n}\n"]}

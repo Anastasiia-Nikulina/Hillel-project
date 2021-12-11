@@ -8,7 +8,7 @@
     & .team-item {
         display: grid;
         grid-template-rows: 60px 200px auto;
-        grid-template-columns: auto auto;
+        grid-template-columns: 413px 1fr;
         grid-template-areas: "img ref"
             "img text"
             "img pos";

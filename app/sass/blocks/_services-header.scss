@@ -1,0 +1,52 @@
+
+.bg-picture {
+    background-image: url(../../img/services-cover.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-color: #323264;
+    background-size: contain;
+}
+.header_services {
+
+        & .ref-page {
+            grid-area: info;
+            font-size: 38px;
+            line-height: 45px;
+            color: #FFFFFF;
+
+            &::before {
+                content: "";
+                width: 21px;
+                height: 46px;
+                background-image: url(../../img/services-slash.svg);
+                display: inline-block;
+                vertical-align: middle;
+            }
+
+            &::after {
+                content: "";
+                width: 41px;
+                height: 47px;
+                background-image: url(../../img/services-symbol-slash.svg);
+                display: inline-block;
+                vertical-align: middle;
+            }
+        }
+    }
+
+
+
+
+
+
+@media (max-width: 767px) {}
+
+@media (max-width: 375px) {
+    .header {
+        grid-template-rows: auto auto;
+        grid-template-columns: min-content auto;
+        grid-template-areas: "info info"
+            "logo nav";
+    }
+
+}

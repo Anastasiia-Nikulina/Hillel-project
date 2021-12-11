@@ -12,14 +12,7 @@
         grid-area: logo;
     }
 
-    & a:not(.lang-switcher-ref):not(.main-menu__item):not(.logo-ref)::before {
-        content: "";
-        width: 6px;
-        height: 6px;
-        border-radius: 50%;
-        background-color: #E6E6F0;
-        display: inline-block;
-    }
+
 
 
     .top-info {
@@ -27,6 +20,15 @@
         display: flex;
         align-items: center;
         justify-content: flex-end;
+
+        & a:not(.lang-switcher-ref):not(.main-menu__item)::before {
+            content: "";
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background-color: #E6E6F0;
+            display: inline-block;
+        }
 
 
         & .lang-switcher {
@@ -43,15 +45,21 @@
                 line-height: 14px;
                 text-align: center;
                 letter-spacing: 1px;
-                color: $white;
+
                 margin-left: 10px;
 
                 &:active {
                     background-color: $magenta;
+                    color: $white;
                     padding: 5px;
                     border-radius: 8px;
                 }
+
+                &_white {
+                    color: $white;
+                }
             }
+
         }
 
 
@@ -61,12 +69,15 @@
                 & a {
                     font-size: 16px;
                     line-height: 19px;
-                    color: $white;
+
 
                     &::before {
                         vertical-align: 2px;
                         margin-right: 8px;
                     }
+                }
+                &_white a {
+                    color: $white;
                 }
             }
 
@@ -76,14 +87,16 @@
                 font-weight: 700;
                 font-size: 16px;
                 line-height: 19px;
-                color: $white;
-                text-decoration: none;
 
                 &::before {
                     vertical-align: 2px;
                     margin-right: 18px;
                 }
             }
+            &__tel_white a {
+                color: $white;
+            }
+
 
             &__fb-logo {
             padding-top: 3px;
@@ -110,13 +123,17 @@
             font-size: 18px;
             line-height: 21px;
             text-align: right;
-            color: $white;
             padding-left: 12px;
             padding-top: 2px;
+
+            &_white {
+                color: $white;
+            }
         }
 
         & a:hover {
             color: $magenta;
+            text-decoration: underline;
         }
     }
 
@@ -127,6 +144,12 @@
 }
 
 @media (max-width: 375px) {
+    .header {
+    grid-template-rows: auto auto;
+    grid-template-columns: min-content auto;
+    grid-template-areas: "info info"
+                        "logo nav";
+    }
 
 }
 

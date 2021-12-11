@@ -1,0 +1,16 @@
+.about-slides {
+    background-color: $grey;
+    padding: 28px 0 30px;
+    border-bottom:  4px solid #E6E6F0;
+
+    &__title {
+        font-size: 14px;
+        line-height: 17px;
+        text-align: center;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: $navy;
+        padding-bottom: 30px;
+    }
+}
+
