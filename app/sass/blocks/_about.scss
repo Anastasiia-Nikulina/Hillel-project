@@ -1,9 +1,8 @@
 .about {
-    padding: 76px 0 60px;
+    padding: 76px 0 80px;
 
     &__group {
         display: flex;
-        flex-wrap: wrap;
     }
 
     & .group-list {
@@ -22,152 +21,161 @@
             padding-bottom: 20px;
             border-right: 4px solid #E6E6F0;
 
+            &:hover {
+                color: $magenta;
+            }
             &:active {
                 border-color: $magenta;
                 color: $magenta;
             }
-        }
 
-    }
-
-    & .text-wrap {
-        width: 56.33%;
-        padding-left: 32px;
-
-        & .text-wrap-inset {
-            width: 600px;
-        }
-
-        &__title {
-            font-size: 32px;
-            line-height: 38px;
-            color: $white;
-            padding-bottom: 20px;
-            padding-top: 50px;
-        }
-
-        &__info {
-            font-size: 21px;
-            line-height: 30px;
-            color: $white;
+            &:last-child {
+                padding-bottom: 0;
+            }
         }
     }
 
-}
-
-@media (max-width: 375px) { /*тут жопа вообще*/
-    .about {
-        & .controls {
-            left: 50%;
-            margin-left: -98px;
-            position: absolute;
-        }
-        label {
-            cursor: pointer;
-            height: 8px;
-            width: 8px;
-            border-radius: 50%;
-            display: inline-block;
-            margin: 25px 12px 0 16px;
-            position: relative;
-        }
-
-        & label:after {
-            border: 2px solid #ddd;
-            content: " ";
-            display: block;
-            height: 12px;
-            left: -4px;
-            position: absolute;
-            top: -4px;
-            width: 12px;
-            -webkit-border-radius: 50%;
-            -moz-border-radius: 50%;
-            -o-border-radius: 50%;
-            border-radius: 50%;
-        }
-
-        &__slider-wrapper {
-            height: 285px;
-            margin: 40px auto 45px;
-            position: relative;
-            width: 375px;
-
-            & > input {
-                display: none;
-            }
-
-
-
-            &
-
-            & label:hover,
-            #slide1:checked~.controls label:nth-of-type(1),
-            #slide2:checked~.controls label:nth-of-type(2),
-            #slide3:checked~.controls label:nth-of-type(3),
-            #slide4:checked~.controls label:nth-of-type(4),
-            #slide5:checked~.controls label:nth-of-type(5) {
-                background: #ddd;
-            }
-
-        }
-
-        &__slider {
-            height: inherit;
-            overflow: hidden;
-            position: relative;
-            width: inherit;
-
-            & .slides {
-                height: inherit;
-                position: absolute;
-                width: inherit;
-            }
-        }
-
+    .group__wrap {
+        width: 56.67%;
+        align-self: center;
     }
-    &__group {}
+    .group__inset {
+        width: 633px;
+        color: $white;
+        padding-left: 40px;
+    }
 
-    & .group-list {
+    .group__title {
+        font-size: 32px;
+        line-height: 38px;
+        padding-bottom: 20px;
+    }
+    .group__txt {
+        font-size: 21px;
+        line-height: 30px;
+    }
+
+    .slider {
+        display: none;
+        position: relative;
+        width: 100%;
+        height: auto;
+      }
+
+      .slider input[name="switch"] {
+        display: none;
+      }
+
+      .switch {
+        position: absolute;
+        left: 0;
+        bottom: -41px;
+        text-align: center;
+        width: 100%;
+      }
+
+      .switch label {
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        cursor: pointer;
+        margin: 0 7px;
+        border-radius: 50%;
+        background-color: rgba($color: #24A3FF, $alpha: 0.2);
+      }
+
+      #btn1:checked~.switch label[for="btn1"] {
+        background-color: #24A3FF;
+      }
+
+      #btn2:checked~.switch label[for="btn2"] {
+        background-color: #24A3FF;
+      }
+
+      #btn3:checked~.switch label[for="btn3"] {
+        background-color: #24A3FF;
+      }
+      #btn4:checked~.switch label[for="btn4"] {
+        background-color: #24A3FF;
+      }
+
+      .slider-inner {
+        overflow: hidden;
+      }
+
+      .slides {
         display: flex;
-        flex-direction: row;
-        color: $magenta;
+        width: 100%;
+        transition: all 0.5s;
 
-        &__item {
-            font-size: 14px;
-            border-right: none;
-            text-transform: uppercase;
-            display: none;
-
-            &:active {
-                display: inline-block;
-                vertical-align: top;
-            }
-
-        }
+    }
+    .slider__page {
+        display: flex;
+        justify-content: center;
 
     }
 
-    & .text-wrap {
-
-        & .text-wrap-inset {
-            width: 335px;
-        }
-
-        &__title {
-            font-size: 22px;
-            line-height: 26px;
-
-        }
-
-        &__info {
-            font-size: 18px;
-            line-height: 26px;
-
-        }
+    .slider__inset {
+        align-self: center;
+        margin-bottom: 20px;
+        width: 335px;
+        padding: 0 20px;
     }
+    .slider__ref {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: #F0145A;
+        padding-bottom: 10px;
+    }
+    .slider__title {
+        font-size: 22px;
+        line-height: 26px;
+        color: #FFFFFF;
+        padding-bottom: 15px;
+    }
+    .slider__txt {
+        font-size: 18px;
+        line-height: 26px;
+        color: #FFFFFF;
+    }
+
+    #btn1:checked~slider-inner slides {
+        transform: translate(0);
+      }
+
+    #btn2:checked~.slider-inner .slides {
+    transform: translate(-100%);
+    }
+
+    #btn3:checked~.slider-inner .slides {
+    transform: translate(-200%);
+    }
+    #btn4:checked~.slider-inner .slides {
+    transform: translate(-300%);
+    }
+
 
 }
 
 
+@media (max-width: 767px) {
+
+}
+
+@media (max-width: 375px) {
+    .about {
+        &__group {
+            display: none;
+        }
+        .slider {
+            display: flex;
+        }
+    }
+
+
+
+}
 

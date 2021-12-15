@@ -1,9 +1,10 @@
 .about-services {
-    padding: 80px 0 100px;
+    padding: 3px 0 100px;
 
     &__wrap {
         display: flex;
         justify-content: center;
+        padding-left: 25px;
     }
 
 
@@ -31,7 +32,7 @@
     &__item-highlight {
         font-size: 36px;
         font-weight: 700;
-        line-height: 42px;
+        line-height: 51px;
         color: #F0145A;
 
         &::before {
@@ -62,6 +63,7 @@
         font-size: 18px;
         line-height: 21px;
         color: $navy;
-        padding-bottom: 40px;
+        padding-bottom: 30px;
+        padding-top: 7px;
     }
 }

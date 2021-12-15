@@ -6,17 +6,49 @@
     }
 
     .lang-switcher-ref_dark {
-        color: inherit;
         color: #B3B3BA;
+
     }
+
 
     .top-info__address_dark a {
         color: #B3B3BA;
     }
     .top-info__tel_dark a {
         color: #B3B3BA;
+
+        &:hover {
+            color: $magenta;
+        }
     }
     .main-menu__item_dark {
         color: #24A3FF;
+
+        &:hover {
+            color: $magenta;
+        }
+
+        &:active {
+            text-decoration: underline;
+        }
     }
+
+    .top-info__fb-logo_dark {
+        padding-top: 3px;
+
+        & path {
+            fill: $text;
+        }
+
+        & a::before {
+            vertical-align: 9px;
+            margin-right: 7px;
+        }
+
+        & path:hover {
+            fill: $magenta;
+        }
+    }
+
+
 }

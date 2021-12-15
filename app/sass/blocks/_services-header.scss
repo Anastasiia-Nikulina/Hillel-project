@@ -32,6 +32,11 @@
                 vertical-align: middle;
             }
         }
+        &.main-menu__item_white_hover {
+            & a:hover {
+                color: $white;
+            }
+        }
     }
 
 

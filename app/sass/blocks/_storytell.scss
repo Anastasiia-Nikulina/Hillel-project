@@ -1,8 +1,7 @@
 .storytell {
     padding: 37px 0 53px;
     border-bottom: 4px solid $separator;
-
-
+    background-color: #F5F5FA;
 
     &__ref {
         font-weight: bold;
@@ -28,8 +27,14 @@
 
         &:hover {
             color: $magenta;
+            transition: 0.5s;
         }
 
+        &:hover::after {
+            background-image: url(../../img/link-arrow-pink.svg);
+            transition: 0.5s;
+            transform: rotate(90deg);
+        }
     }
 
     &__title {
@@ -40,12 +45,13 @@
     &__group {
         display: flex;
         flex-wrap: wrap;
-        margin: 0 -19px ;
+        margin: 0 -19px;
 
 
         & .group-item {
             width: 33.333%;
-            padding: 0 19px 42px;
+            padding: 0 19px 40px;
+
 
             & a {
                 font-size: 0;
@@ -59,6 +65,7 @@
 
             &__wrap {
                 padding: 15px 20px;
+                background-color: $white;
             }
 
             &__title {
@@ -97,9 +104,10 @@
     &__btn-wrap {
         display: flex;
         justify-content: center;
-        margin-top: 10px;
+        margin-top: 14px;
 
     }
+
     &__btn {
         cursor: pointer;
         background: #24A3FF;
@@ -112,6 +120,66 @@
         line-height: 17px;
         text-align: center;
         color: $white;
+
+        &:hover {
+            background-color: #0085FF;
+        }
+
+        &:active {
+            background-color: #006CCF;
+        }
+
+
+    }
+
+
+
+}
+
+@media (max-width: 767px) {}
+
+@media (max-width: 375px) {
+    .storytell {
+        padding-top: 66px;
+
+        &__title {
+            font-size: 32px;
+            line-height: 38px;
+            padding-bottom: 25px;
+        }
+
+        &__group {
+            flex-direction: column;
+
+            & .group-item {
+                width: 100%;
+
+                &__date {
+                    border-color: transparent;
+                }
+            }
+
+            & .group-item_03 {
+                display: none;
+            }
+
+            & .group-item_04 {
+                display: none;
+            }
+
+            & .group-item_05 {
+                display: none;
+            }
+
+            & .group-item_06 {
+                display: none;
+            }
+        }
+
+        .group-item__text-inset {
+            display: none;
+        }
+
     }
 
 

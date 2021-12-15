@@ -1,6 +1,7 @@
 .advantage {
     background: $supersoft-gradient;
     border-radius: 0px 0px 12px 12px;
+    padding-bottom: 9px;
 
     &__services a {
         text-transform: uppercase;
@@ -22,6 +23,16 @@
             display: inline-flex;
             padding-right: 5px;
         }
+
+        &:hover {
+            color:$magenta;
+            transition: 0.5s;
+        }
+        &:hover::after {
+            background-image: url(../../img/link-arrow-pink.svg);
+            transition: 0.5s;
+            transform:rotate(90deg);
+        }
     }
 
 
@@ -38,7 +49,6 @@
             width: 33.333%;
             padding: 0 20px;
             margin-top: 58px;
-
             &__img {
                 padding: 14px;
                 background-color: $white;
@@ -49,6 +59,13 @@
 
                 &:last-child {
                     padding: 21px;
+                }
+            }
+
+            &__ref {
+                & :hover {
+                    color: $magenta;
+                    transition: 0.5s;
                 }
             }
 
@@ -66,8 +83,34 @@
                 color: $white;
 
             }
+
         }
 
     }
 
+}
+
+@media (max-width: 767px) {
+
+}
+
+@media (max-width: 375px) {
+    .advantage__title {
+        font-size: 32px;
+        line-height: 38px;
+    }
+    .advantage__group {
+        flex-direction: column;
+
+        & .group-item {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+
+            &__img {
+
+            }
+        }
+
+    }
 }

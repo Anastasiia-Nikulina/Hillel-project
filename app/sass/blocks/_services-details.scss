@@ -1,7 +1,7 @@
 .services-details {
     background:  linear-gradient(194.34deg, #323264 -14.28%, #323264 44.35%, #643E72 86.64%);
     border-radius: 0px 0px 12px 12px;
-    padding-bottom: 80px;
+    padding-bottom: 65px;
 
     &__parent {
         width: 1092px;
@@ -16,40 +16,41 @@
         color: #FFFFFF;
     }
     &__wrap {
-
         display: flex;
         justify-content: space-between;
     }
 
     & ul {
-        list-style: none;
+        list-style: disc;
         padding: 0;
 
-        & li::before {
-            content: "";
+        & li::marker {
+            /* content: "";
             margin-right: 8px;
             display: inline-block;
             vertical-align: 2px;
             width: 6px;
             height: 6px;
-            border-radius: 50%;
-            background-color: $magenta;
+            border-radius: 50%; */
+            color: $magenta;
         }
     }
     &__list-left {
-        width: 514px;
-        margin-left: 20px;
+        width: 50%;
+        margin-left: 28px;
 
     }
     &__list-right {
-        width: 515px;
+        width: 50%;
+        margin-left: 63px;
     }
 
     &__list-item {
         font-size: 18px;
         line-height: 26px;
         color: #FFFFFF;
-        padding-bottom: 20px;
+        padding-bottom: 14px;
+        width: 500px;
     }
 
 

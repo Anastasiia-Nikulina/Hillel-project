@@ -1,6 +1,6 @@
 .about-slides {
     background-color: $grey;
-    padding: 28px 0 30px;
+    padding: 28px 0 70px;
     border-bottom:  4px solid #E6E6F0;
 
     &__title {
@@ -12,5 +12,111 @@
         color: $navy;
         padding-bottom: 30px;
     }
+
+
+    .slider {
+        position: relative;
+        width: 1320px;
+        height: auto;
+      }
+
+      .slider input[name="switch"] {
+        display: none;
+      }
+
+      .switch {
+        position: absolute;
+        left: 0;
+        bottom: -44px;
+        text-align: center;
+        width: 100%;
+      }
+
+      .switch label {
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        cursor: pointer;
+        margin: 0 5px;
+        border-radius: 50%;
+        background-color: rgba($color: #24A3FF, $alpha: 0.2);
+      }
+
+      #btn1:checked~.switch label[for="btn1"] {
+        background-color: #24A3FF;
+      }
+
+      #btn2:checked~.switch label[for="btn2"] {
+        background-color: #24A3FF;
+      }
+
+      #btn3:checked~.switch label[for="btn3"] {
+        background-color: #24A3FF;
+      }
+
+      .slider-inner {
+        overflow: hidden;
+      }
+
+      .slides {
+        width: 100%;
+        height: 115px;
+        transition: all 0.5s;
+
+        & .page {
+            display: flex;
+            flex-direction: row;
+            margin: 0 -20px;
+            width: auto;
+
+            & .company-logo-group {
+                width: 25%;
+                background: #FFFFFF;
+                border-radius: 12px;
+                margin: 0 20px;
+
+                &:nth-child(n+4) {
+                    margin-right: 0;
+                }
+                &:nth-child(5) {
+                    margin-left: 0;
+                }
+
+                &_01 {
+                 padding: 25px 110px 24px;
+                }
+                &_02 {
+                 padding: 25px 70px 24px;
+                }
+                &_03 {
+                 padding: 25px 52px 24px;
+                }
+                &_04 {
+                 padding: 25px 67px 24px;
+                }
+             }
+        }
+
+
+        .page:nth-child(4).company-logo-group {
+            margin: 0;
+        }
+
+
+    }
+
+    #btn1:checked~slider-inner slides {
+        transform: translate(0);
+      }
+
+      #btn2:checked~.slider-inner .slides {
+        transform: translate(-100%);
+      }
+
+      #btn3:checked~.slider-inner .slides {
+        transform: translate(-200%);
+      }
+
+
 }
 
