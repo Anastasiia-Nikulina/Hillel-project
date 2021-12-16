@@ -1,43 +1,48 @@
 .intro {
-display: flex;
-flex-direction: column;
-align-items: center;
-
-background-image: url(/img/bg-frame.svg);
-background-repeat: no-repeat;
-background-position: center center;
-background-size: contain;
-position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 113px;
+    background-image: url(/img/bg-frame.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    position: relative;
 
 
     &__title {
+        padding-top: 184px;
         width: 511px;
+        height: 510px;
         text-align: center;
         font-weight: 500;
         font-size: 38px;
         line-height: 45px;
         text-align: center;
         color: $white;
-        position: absolute;
-        top: 29%;
-        left: 31%;
+        background-image: url(/img/symbol.svg);
+        background-repeat: no-repeat;
+        background-position-x: -47px;
+        background-position-y: 122px;
+        background-size: contain;
+
+
     }
+
     &__img {
         padding-top: 122px;
         margin-right: 167px;
+        position: absolute;
     }
 
     &__scroll {
         position: absolute;
-        bottom: 6%;
+        bottom: 5%;
         left: 48%;
         margin-left: 6px;
 
 
         & a {
-            & path {
-                opacity: 0.5;
-            }
             content: "";
             padding: 11px;
             border: 1px solid rgba($color:$white, $alpha: 0.5);
@@ -50,29 +55,37 @@ position: relative;
 }
 
 
-@media (max-width: 767px) {
-    .intro {
-        &__title {
-            left: 8%;
-        }
-        &__img {
-            padding-top: 122px;
-            margin-right: 167px;
-        }
-    }
+@media (min-width: 768px) and (max-width: 991px) {
+
 }
 
-@media (max-width: 375px) {
+@media (min-width: 374px) and (max-width: 767px) {
     .intro {
         background: none;
+        padding-bottom: 0;
+
+        &__img {
+            padding-top: 90px;
+            margin-right: 195px;
+        }
 
         &__title {
             width: 370px;
-            left: 0;
+            padding-top: 126px;
+            font-size: 35px;
+            line-height: 41px;
+            padding-right: 31px;
+            background-position-x: -81px;
+            background-position-y: 95px;
+        }
+        &__scroll {
+            bottom: 10%;
+            left: 38%;
+            margin-left: 5px;
+
+            & a {
+                padding: 9px;
+            }
         }
     }
 }
-
-
-
-

@@ -1,5 +1,5 @@
 .footer {
-    padding: 29px 0 40px;
+    padding: 30px 0 40px;
     background-color: #F5F5FA;
 
     & .footer-wrap {
@@ -12,86 +12,82 @@
             flex-direction: column;
             width: 41.67%;
 
-                & a:not(.footer-left__logo-fb)::before {
-                    content: "";
-                    width: 6px;
-                    height: 6px;
-                    border-radius: 50%;
-                    background-color: rgba($color: #B3B3BA, $alpha: 0.7);
-                    display: inline-block;
-                    vertical-align: 2px;
-                    margin-right: 10px;
+            & a:not(.footer-left__logo-fb)::before {
+                content: "";
+                width: 6px;
+                height: 6px;
+                border-radius: 50%;
+                background-color: rgba($color: #B3B3BA, $alpha: 0.7);
+                display: inline-block;
+                vertical-align: 2px;
+                margin-right: 10px;
+            }
+
+            &__contact {
+                display: flex;
+                padding-top: 31px;
+            }
+
+            &__text {
+                padding-right: 32px;
+            }
+
+            &__map {
+                text-transform: uppercase;
+                font-weight: 700;
+                font-size: 12px;
+                line-height: 14px;
+                letter-spacing: 1px;
+                color: $blue;
+
+                &:hover {
+                    color: $magenta;
                 }
+            }
 
-                &__contact {
-                    display: flex;
-                    padding-top: 31px;
+            &__tel a {
+                padding-right: 11px;
+                padding-left: 5px;
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 19px;
+                color: $dark-violet;
+
+                &:hover {
+                    color: $magenta;
                 }
+            }
 
-                &__text {
-                    padding-right: 32px;
+            &__address {
+                display: flex;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 19px;
+                color: $navy;
+            }
+
+            &__mail a {
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 19px;
+                color: $blue;
+
+                &:hover {
+                    color: $magenta;
                 }
+            }
 
-                &__map {
-                    text-transform: uppercase;
-                    font-weight: 700;
-                    font-size: 12px;
-                    line-height: 14px;
-                    letter-spacing: 1px;
-                    color: $blue;
+            &__logo {
+                margin-top: -9px;
+                padding-right: 10px;
 
-                    &:hover {
-                        color: $magenta;
-                    }
+
+                & path:hover {
+                    fill: $magenta;
                 }
-
-
-
-                &__tel a {
-                    padding-right: 10px;
-                    font-weight: 700;
-                    font-size: 16px;
-                    line-height: 19px;
-                    color: $dark-violet;
-
-                    &:hover {
-                        color: $magenta;
-                    }
-                }
-
-                &__address {
-                    display: flex;
-                    font-weight: 500;
-                    font-size: 16px;
-                    line-height: 19px;
-                    color: $navy;
-                }
-
-                &__mail a {
-                    font-weight: 700;
-                    font-size: 16px;
-                    line-height: 19px;
-                    letter-spacing: 1px;
-                    color: $blue;
-
-                    &:hover {
-                        color: $magenta;
-                    }
-                }
-
-                &__logo {
-                    margin-top: -9px;
-                    padding-right: 10px;
-
-
-                    & path:hover {
-                        fill: $magenta;
-                    }
-                }
-
-
             }
         }
+    }
 
     .footer-right {
 
@@ -102,13 +98,12 @@
             text-align: right;
             color: #B3B3BA;
         }
-
     }
 }
 
-@media (max-width: 767px) {}
+@media (min-width: 768px) and (max-width: 991px) {}
 
-@media (max-width: 375px) {
+@media (min-width: 374px) and (max-width: 767px) {
     .footer {
         padding-bottom: 118px;
 
@@ -127,6 +122,7 @@
                 & a:not(.footer-left__logo-fb)::before {
                     background-color: transparent;
                 }
+
                 &__text {
                     padding-right: 0;
                     margin-bottom: 10px;
@@ -134,18 +130,19 @@
 
                 &__address {
                     width: 100%;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
                 }
 
                 &__contact {
-                width: 100%;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-                padding-top: 25px;
+                    width: 100%;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    padding-top: 25px;
                 }
+
                 &__tel {
                     padding: 20px 0;
                 }
@@ -155,9 +152,10 @@
                 }
             }
         }
+
         & .footer-right__text {
             width: 320px;
             text-align: center;
         }
-}
+    }
 }

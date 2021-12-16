@@ -13,11 +13,10 @@
         padding-bottom: 30px;
     }
 
-
     .slider {
         position: relative;
-        width: 1320px;
         height: auto;
+        margin: 0 -20px;
       }
 
       .slider input[name="switch"] {
@@ -66,42 +65,42 @@
         & .page {
             display: flex;
             flex-direction: row;
-            margin: 0 -20px;
             width: auto;
 
             & .company-logo-group {
                 width: 25%;
+                align-self: center;
+                display: flex;
+                justify-content: center;
                 background: #FFFFFF;
+                padding: 62px 152px 48px;
+
                 border-radius: 12px;
                 margin: 0 20px;
+                background-repeat: no-repeat;
+                background-position: center center;
 
-                &:nth-child(n+4) {
-                    margin-right: 0;
-                }
                 &:nth-child(5) {
+                    margin-left: 0;
+                }
+                &:nth-child(9) {
                     margin-left: 0;
                 }
 
                 &_01 {
-                 padding: 25px 110px 24px;
+                    background-image: url(../../img/legal-500-logo.svg);
                 }
                 &_02 {
-                 padding: 25px 70px 24px;
+                    background-image: url(../../img/premia-logo.svg);
                 }
                 &_03 {
-                 padding: 25px 52px 24px;
+                    background-image: url(../../img/leaders-logo.svg);
                 }
                 &_04 {
-                 padding: 25px 67px 24px;
+                    background-image: url(../../img/ulf-logo.svg);
                 }
              }
         }
-
-
-        .page:nth-child(4).company-logo-group {
-            margin: 0;
-        }
-
 
     }
 
@@ -116,7 +115,15 @@
       #btn3:checked~.slider-inner .slides {
         transform: translate(-200%);
       }
+}
 
 
+@media (min-width: 767px) and (max-width: 991px) {
+
+}
+
+@media (min-width: 374px) and (max-width: 767px) {
+
+    
 }
 

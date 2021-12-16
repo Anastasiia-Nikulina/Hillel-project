@@ -25,3 +25,34 @@
     }
 
 }
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .about-description__title {
+        font-size: 32px;
+        line-height: 38px;
+    }
+    .about-description__text {
+        font-size: 18px;
+        line-height: 26px;
+    }
+}
+
+@media (min-width: 374px) and (max-width: 767px) {
+    .about-description {
+        padding: 20px 0 40px;
+    }
+    .about-description__wrap {
+        flex-direction: column-reverse;
+    }
+    .about-description__text-inset, .about-description__text-group {
+        width: 100%;
+    }
+    .about-description__title {
+        font-size: 32px;
+        line-height: 38px;
+    }
+    .about-description__text {
+        font-size: 18px;
+        line-height: 26px;
+    }
+}

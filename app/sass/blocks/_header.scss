@@ -32,6 +32,7 @@
             list-style: none;
             display: inline-flex;
             margin-right: 8px;
+            padding: 0;
 
             & .lang-switcher-ref {
                 text-transform: uppercase;
@@ -105,7 +106,6 @@
             }
         }
 
-
         &__fb-logo_white {
             padding-top: 3px;
 
@@ -152,7 +152,6 @@
                 }
             }
         }
-
     }
 
     .mobile-menu {
@@ -165,42 +164,49 @@
         top: 70px;
         left: 300px;
         right: 0;
-        height: 200px;
+        height: 375px;
         z-index: 9999999;
-
       }
       .mobile-menu__btn {
-        position: relative;
+        position: absolute;
+        top: 0;
+        right: 52px;
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 32px;
-        height: 32px;
+        width: 22px;
+        height: 28px;
         cursor: pointer;
         transition: .4s;
       }
-      .mobile-menu__icon_white {
+      .mobile-menu__icon {
         display: block;
         position: relative;
-        background:$white;
         width: 90%;
         height: 2px;
         transition: .4s;
+      }
+      .mobile-menu__icon_white {
+        background:$white;
       }
       .mobile-menu__icon::after, .mobile-menu__icon::before {
         content: "";
         display: block;
         position: absolute;
-        background: $white;
         width: 100%;
         height: 2px;
         transition: .4s;
+        z-index: 1000;
       }
+      .mobile-menu__icon_white::after, .mobile-menu__icon_white::before {
+          background: $white;
+      }
+
       .mobile-menu__icon::after {
-        top: 8px;
+        top: 5px;
       }
       .mobile-menu__icon::before {
-        top: -8px;
+        top: -5px;
       }
       .mobile-menu__container {
         position: absolute;
@@ -208,7 +214,7 @@
         display: flex;
         align-items: center;
         justify-content: flex-end;
-        top: 50px;
+        top: -69px;
         right: 18px;
         z-index: 999;
         height: 0;
@@ -217,19 +223,22 @@
         overflow: hidden;
       }
       .mobile-menu__list {
-        background-color: #E5E5E5;
+        background-color: #F5F5FA;
         transition: .5s;
         list-style: none;
         padding-left: 0;
-        margin-top: -50px;
+        margin-top: 50px;
       }
       .mobile-menu__item {
         padding: 11px 120px 15px;
+        border-bottom: 1px solid $white;
+      }
+      .mobile-menu__item_white {
+        background-color: $white;
+        padding: 4px 0 14px;
       }
       .mobile-menu__link {
-        text-decoration: none;
-
-        color: $white;
+        color: #24A3FF;
         font-weight: 500;
         font-size: 18px;
         line-height: 21px;
@@ -260,17 +269,21 @@
       .mobile-menu__checkbox:checked ~ .mobile-menu__btn .mobile-menu__icon::after {
         transform: rotate(-45deg);
         -webkit-transform: rotate(-45deg);
+        background: #EC6F5D;
+
       }
       .mobile-menu__checkbox:checked ~ .mobile-menu__btn .mobile-menu__icon::before {
         transform: rotate(45deg);
         -webkit-transform: rotate(45deg);
+        background: #EC6F5D;
+
       }
 
 }
 
 
 
-@media (max-width: 767px) {
+@media (min-width: 768px) and (max-width: 991px) {
     .header {
         grid-template-rows: auto auto auto;
         grid-template-columns: 1fr;
@@ -280,10 +293,10 @@
 
         .top-info {
             justify-content: flex-start;
-        }
 
-        .lang-switcher {
-            padding: 0;
+            & .lang-switcher li:first-child .lang-switcher-ref {
+                margin-left: 0;
+            }
         }
 
         .main-menu {
@@ -298,8 +311,11 @@
 
 }
 
-@media (max-width: 375px) {
+@media (min-width: 374px) and (max-width: 767px) {
     .header {
+        padding-top: 30px;
+        padding-bottom: 0;
+
         grid-template-rows: auto auto;
         grid-template-columns: 1fr 32px;
         grid-template-areas: "info info"
@@ -311,6 +327,7 @@
         }
 
         .top-info {
+            padding-bottom: 20px;
             & a:not(.lang-switcher-ref):not(.main-menu__item)::before {
                 background-color: transparent;
             }
@@ -322,11 +339,12 @@
             }
             &__tel_white a {
                 color: $text;
+                padding-right: 34px;
             }
-        }
 
-        .lang-switcher:first-child .lang-switcher__item {
-            margin-left: 0;
+            & .lang-switcher li:first-child .lang-switcher-ref {
+                   margin-left: 6px;
+            }
         }
 
         & .main-menu {
@@ -336,7 +354,5 @@
         .mobile-menu {
             display: block;
         }
-
-
     }
 }

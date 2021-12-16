@@ -7,7 +7,7 @@
         letter-spacing: 1px;
         text-transform: uppercase;
         color: $navy;
-        padding-bottom: 31px;
+        padding-bottom: 29px;
         text-align: center;
     }
 
@@ -78,30 +78,28 @@
 
     &__list-ref {
         padding: 10px;
-
     }
-
 }
-@media (max-width: 767px) {
+
+@media (min-width: 768px) and (max-width: 991px) {
     .companies {
 
         &__list {
-       grid-template-rows: repeat(4, 25%);
-       grid-template-columns: repeat(3, 33.33%);
-   }
+            grid-template-rows: repeat(4, 25%);
+            grid-template-columns: repeat(3, 33.33%);
+        }
+    }
 }
 
-}
-
-@media (max-width: 375px) {
+@media (min-width: 374px) and (max-width: 767px) {
     .container_lg {
         width: 375px;
         height: 540px;
-
     }
+
     .companies {
 
-             &__list {
+        &__list {
             grid-template-rows: repeat(6, 90px);
             grid-template-columns: repeat(2, 50%);
         }
@@ -165,6 +163,5 @@
             width: 112px;
             height: 70px;
         }
-
     }
 }

@@ -1,7 +1,8 @@
 .about-team {
     background-image: url(../../img/team-img.jpg);
     background-repeat: no-repeat;
-    background-position: center top;
+    background-position: top center;
+    height: 100%;
     padding: 163px 0;
 
     &__title {
@@ -13,5 +14,24 @@
         color: $white;
         opacity: 0.8;
         text-shadow: 0px 15px 30px rgba(40, 40, 86, 0.8);
+    }
+}
+
+@media (min-width: 767px) and (max-width: 991px) {
+    .about-team__title {
+        font-size: 60px;
+        line-height: 60px;
+        letter-spacing: 40px;
+    }
+}
+
+@media (min-width: 374px) and (max-width: 767px) {
+    .about-team {
+        background-size: cover;
+    }
+    .about-team__title {
+        font-size: 36px;
+        line-height: 42px;
+        letter-spacing: 20px;
     }
 }

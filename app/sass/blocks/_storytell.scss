@@ -93,7 +93,7 @@
 
             &__text {
                 font-weight: 500;
-                padding-top: 19px;
+                padding-top: 20px;
                 font-size: 16px;
                 line-height: 22px;
                 color: #000000;
@@ -104,7 +104,7 @@
     &__btn-wrap {
         display: flex;
         justify-content: center;
-        margin-top: 14px;
+        margin-top: 13px;
 
     }
 
@@ -128,17 +128,16 @@
         &:active {
             background-color: #006CCF;
         }
-
-
     }
-
-
-
 }
 
-@media (max-width: 767px) {}
+@media (min-width: 768px) and (max-width: 991px) {
+    .storytell__group .group-item__text-inset {
+        width: 100%;
+    }
+}
 
-@media (max-width: 375px) {
+@media (min-width: 374px) and (max-width: 767px) {
     .storytell {
         padding-top: 66px;
 
@@ -179,9 +178,5 @@
         .group-item__text-inset {
             display: none;
         }
-
     }
-
-
-
 }

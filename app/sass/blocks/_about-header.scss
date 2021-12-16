@@ -7,13 +7,12 @@
 
     .lang-switcher-ref_dark {
         color: #B3B3BA;
-
     }
-
 
     .top-info__address_dark a {
         color: #B3B3BA;
     }
+
     .top-info__tel_dark a {
         color: #B3B3BA;
 
@@ -21,6 +20,7 @@
             color: $magenta;
         }
     }
+
     .main-menu__item_dark {
         color: #24A3FF;
 
@@ -49,6 +49,45 @@
             fill: $magenta;
         }
     }
+}
 
+@media (min-width: 768px) and (max-width: 991px) {
+    .header_services {
 
+        & .ref-page {
+            grid-area: logo;
+            margin-left: 155px;
+        }
+    }
+}
+
+@media (min-width: 374px) and (max-width: 767px) {
+    .header_services {
+
+        & .ref-page {
+            grid-area: logo;
+            margin-left: 74px;
+            font-size: 18px;
+            line-height: 22px;
+
+            &::before {
+                width: 11px;
+                height: 24px;
+            }
+
+            &::after {
+                width: 21px;
+                height: 24px;
+            }
+        }
+    }
+
+    .header {
+        .mobile-menu__icon_dark {
+            background: #323264;
+        }
+        .mobile-menu__icon_dark::after, .mobile-menu__icon_dark::before {
+            background: #323264;
+        }
+    }
 }

@@ -4,7 +4,6 @@
 
 
     &__group {
-        margin: 0 -20px;
         flex-wrap: wrap;
 
         & .group-item {
@@ -15,7 +14,6 @@
 
             &__text-inset {
                 width: 861px;
-
             }
 
             &__img {
@@ -38,15 +36,14 @@
             }
 
             &__text {
+                font-weight: 300;
                 font-size: 21px;
                 line-height: 30px;
                 color: $white;
                 text-align: center;
                 padding-top: 20px;
-
             }
         }
-
     }
 
     &__btn-wrap {
@@ -58,6 +55,7 @@
     &__btn {
         cursor: pointer;
         font-size: 14px;
+        font-weight: 500;
         line-height: 17px;
         text-align: center;
         color: #FFFFFF;
@@ -74,8 +72,6 @@
         &:active {
             background-color: #006CCF;
         }
-
-
     }
 
     form {
@@ -90,23 +86,22 @@
         filter: drop-shadow(0px 15px 80px rgba(40, 40, 86, 0.5));
     }
 
-    textarea, input {
-        display:block;
-        margin-bottom:20px;
+    textarea,
+    input {
+        display: block;
+        margin-bottom: 20px;
         padding-left: 10px;
-        padding-right:10px;
+        padding-right: 10px;
         border-radius: 8px;
         background-clip: padding-box;
         font-size: 18px;
         line-height: 26px;
         color: #000000;
-
         font-family: "TT Norms", Arial, sans-serif;
-
     }
 
-    textarea{
-        overflow:hidden;
+    textarea {
+        overflow: hidden;
         width: 100%;
         height: 180px;
         border-style: none;
@@ -120,17 +115,21 @@
         line-height: 26px;
         color: #000000;
     }
+
     input[type=submit] {
-        cursor:pointer;
+        cursor: pointer;
     }
-    input:focus, textarea:focus {
+
+    input:focus,
+    textarea:focus {
         background: #FFFFFF;
+        border: 2px solid #F0145A;
         border-radius: 8px;
         overflow: hidden;
     }
 
     :focus::placeholder {
-        color:transparent;
+        color: transparent;
     }
 
     .btn-close {
@@ -144,7 +143,7 @@
         position: absolute;
         top: 15px;
         right: 15px;
-}
+    }
 
     .help-title {
         font-size: 32px;
@@ -153,6 +152,7 @@
         color: $magenta;
         padding-bottom: 20px;
     }
+
     .help-text {
         font-size: 14px;
         line-height: 16px;
@@ -198,41 +198,79 @@
         background-color: rgba($color:#323264, $alpha: 0.7);
         position: fixed;
         transition: opacity .5s;
+    }
 
-        }
-        .overlay:target {
+    .overlay:target {
         visibility: visible;
         opacity: 1;
-        }
+    }
 
-        .modal {
-         right: 0;
-         left: 0;
-         width: 50%;
-         z-index: 10001;
-         opacity: 0;
-         display: block;
-         visibility: hidden;
-         position: absolute;
-         transition: opacity 500ms ease-in;
-        }
+    .modal {
+        right: 0;
+        left: 0;
+        width: 50%;
+        z-index: 10001;
+        opacity: 0;
+        display: block;
+        visibility: hidden;
+        position: absolute;
+        transition: opacity 500ms ease-in;
+    }
 
-        .overlay:target+.modal{
+    .overlay:target+.modal {
         top: 25%;
         visibility: visible;
         opacity: 1;
-        }
-        /* планшет */
-        @media only screen and (min-width: 768px) and (max-width: 991px) {
-           .modal {
-               width: 95%;
-            }
-        }
-        /* смартфон */
-        @media only screen and (min-width: 375px) and (max-width: 767px) {
-           .modal {
-               width:85%;
-            }
-        }
+    }
 
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+        .modal {
+            width: 95%;
+        }
+    }
+
+    @media only screen and (min-width: 375px) and (max-width: 767px) {
+        .modal {
+            width: 85%;
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .services-advantage__group .group-item__text-inset {
+        width: 100%;
+    }
+}
+
+@media (min-width: 374px) and (max-width: 767px) {
+    .services-advantage {
+        padding-top: 46px;
+
+        &__group {
+            .group-item {
+                align-items: flex-start;
+
+                &__title {
+                    font-size: 32px;
+                    line-height: 38px;
+                    text-align: left;
+                }
+
+                &__text {
+                    font-size: 18px;
+                    line-height: 26px;
+                    text-align: left;
+                }
+
+                &__text-inset {
+                    width: 100%;
+                }
+
+                &__img {
+                    width: 85px;
+                    height: 85px;
+                }
+            }
+        }
+    }
 }

@@ -7,6 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body class="body">
     <header class="header header_services container">
         <div class="logo">
@@ -63,27 +64,53 @@
                 <a class="main-menu__item main-menu__item_dark" href="#">контакти</a>
             </nav>
         </div>
+        <nav class="mobile-menu">
+            <input type="checkbox" id="checkbox" class="mobile-menu__checkbox">
+            <label for="checkbox" class="mobile-menu__btn">
+                <span class="mobile-menu__icon mobile-menu__icon_dark"></span>
+            </label>
+            <div class="mobile-menu__container">
+                <ul class="mobile-menu__list">
+                    <li class="mobile-menu__item mobile-menu__item_white">
+                        <img src="img/symbol-mb.svg" width="32" height="32" alt="symbol-mb">
+                    </li>
+                    <li class="mobile-menu__item"><a href="about.html" class="mobile-menu__link">о нас</a></li>
+                    <li class="mobile-menu__item"><a href="services.html" class="mobile-menu__link">послуги</a></li>
+                    <li class="mobile-menu__item"><a href="#" class="mobile-menu__link">команда</a></li>
+                    <li class="mobile-menu__item"><a href="#" class="mobile-menu__link">публікації</a></li>
+                    <li class="mobile-menu__item"><a href="#" class="mobile-menu__link">контакти</a></li>
+                </ul>
+            </div>
+        </nav>
     </header>
     <main>
         <section class="about-services">
             <div class="container">
                 <div class="about-services__wrap">
                     <article class="about-services__item about-services__item_left">
-                        <h2 class="title">Перевертаємо уявлення про юридичні послуги.</h2>
-                        <p class="about-services__item-intro">Консолідуючи багаторічний досвід і практику, юристи компанії супроводжують складні проекти і досягають прийняття ряду важливих для галузі рішень. Багато з них формують практику застосування морського права в Україні.</p>
-                        <p class="about-services__item-intro">Prolegals – надійний бізнес-партнер, що підтверджується стабільним співробітництвом з міжнародними юридичними фірмами, довірою великих українських і міжнародних компаній, визнанням професійних рейтингів.</p>
+                        <h2 class="about-services__title title">Перевертаємо уявлення про юридичні послуги.</h2>
+                        <p class="about-services__item-intro">Консолідуючи багаторічний досвід і практику, юристи
+                            компанії супроводжують складні проекти і досягають прийняття ряду важливих для галузі
+                            рішень. Багато з них формують практику застосування морського права в Україні.</p>
+                        <p class="about-services__item-intro">Prolegals – надійний бізнес-партнер, що підтверджується
+                            стабільним співробітництвом з міжнародними юридичними фірмами, довірою великих українських і
+                            міжнародних компаній, визнанням професійних рейтингів.</p>
                     </article>
                     <article class="about-services__item about-services__item_right">
                         <div class="about-services__item-group">
-                            <span class="about-services__item-highlight about-services__item-highlight_icon01">10+</span>
+                            <span
+                                class="about-services__item-highlight about-services__item-highlight_icon01">10+</span>
                             <p class="about-services__item-text">років релевантного досвіду</p>
                         </div>
                         <div class="about-services__item-group">
-                            <span class="about-services__item-highlight about-services__item-highlight_icon02">30+</span>
-                            <p class="about-services__item-text">активних клієнтів, які довіряють нам свої доручення щомісячно</p>
+                            <span
+                                class="about-services__item-highlight about-services__item-highlight_icon02">30+</span>
+                            <p class="about-services__item-text">активних клієнтів, які довіряють нам свої доручення
+                                щомісячно</p>
                         </div>
                         <div class="about-services__item-group">
-                            <span class="about-services__item-highlight about-services__item-highlight_icon03">500+</span>
+                            <span
+                                class="about-services__item-highlight about-services__item-highlight_icon03">500+</span>
                             <p class="about-services__item-text">годин роботи «pro bono» щорічно</p>
                         </div>
                     </article>
@@ -93,17 +120,30 @@
         <section class="about-team">
             <h1 class="about-team__title">команда</h1>
         </section>
-        <section class="about-description container">
-            <div class="about-description__wrap">
-                <div class="about-description__text-inset">
-                    <h2 class="about-description__title title">Якість — це те, про що ми піклуємося найбільше.</h2>
+        <section class="about-description">
+            <div class="container">
+                <div class="about-description__wrap">
+                    <div class="about-description__text-inset">
+                        <h2 class="about-description__title title">Якість — це те, про що ми піклуємося найбільше.</h2>
+                    </div>
+                    <ul class="about-description__text-group">
+                        <li>
+                            <p class="about-description__text">Історично незмінна юридична професія почала
+                                переформатовуватись в останні роки. Клієнти це відчувають, алеюридичні фірми все ще
+                                опираються еволюції. Клієнти потребують зручності, простоти, прозорої оплати. Google, IBM
+                                WatsОn, Symantec Clearwell доводять, що технологічна революція в юридичних послугах
+                                розпочалася і стала неминучою.</p>
+                        </li>
+                        <li>
+                            <p class="about-description__text">Якість — це те, про що ми піклуємося найбільше.</p>
+                        </li>
+                        <li>
+                            <p class="about-description__text">Якщо ви не задоволені нашою роботою, ми повернемо гроші. Ми
+                                довіряємо нашим клієнтам. І ми хочемо, щоб клієнти нам теж довіряли.</p>
+                        </li>
+                    </ul>
                 </div>
-            <ul class="about-description__text-group">
-                <li><p class="about-description__text">Історично незмінна юридична професія почала переформатовуватись в останні роки. Клієнти це відчувають, алеюридичні фірми все ще опираються еволюції. Клієнти потребують зручності, простоти, прозорої оплати. Google, IBM WatsОn, Symantec Clearwell доводять, що технологічна революція в юридичних послугах розпочалася і стала неминучою.</p></li>
-                <li><p class="about-description__text">Якість — це те, про що ми піклуємося найбільше.</p></li>
-                <li><p class="about-description__text">Якщо ви не задоволені нашою роботою, ми повернемо гроші. Ми довіряємо нашим клієнтам. І ми хочемо, щоб клієнти нам теж довіряли.</p></li>
-            </ul>
-        </div>
+            </div>
         </section>
         <section class="about-slides">
             <div class="container">
@@ -114,79 +154,77 @@
                     <input type="radio" name="switch" id="btn3">
 
                     <div class="switch">
-                      <label for="btn1"></label>
-                      <label for="btn2"></label>
-                      <label for="btn3"></label>
+                        <label for="btn1"></label>
+                        <label for="btn2"></label>
+                        <label for="btn3"></label>
                     </div>
 
-
-
                     <div class="slider-inner">
-                      <div class="slides">
-                        <div class="page">
-                            <div class="company-logo-group company-logo-group_01">
-                                <a class="company-01" href="#">
-                                    <img src="img/legal-500-logo.svg" width="80" height="60" alt="legal-500-logo">
-                                </a>
+                        <div class="slides">
+                            <div class="page">
+                                <div class="company-logo-group company-logo-group_01">
+                                    <div class="company-01">
+                                        <a  href="#"></a>
+                                    </div>
+                                </div>
+                                <div class="company-logo-group company-logo-group_02">
+                                    <div class="company-02">
+                                        <a  href="#"></a>
+                                    </div>
+                                </div>
+                                <div class="company-logo-group company-logo-group_03">
+                                    <div class="company-03">
+                                        <a  href="#"></a>
+                                    </div>
+                                </div>
+                                <div class="company-logo-group company-logo-group_04">
+                                    <div class="company-04">
+                                        <a  href="#"></a>
+                                    </div>
+                                </div>
+                                <div class="company-logo-group company-logo-group_01">
+                                    <div class="company-01">
+                                        <a  href="#"></a>
+                                    </div>
+                                </div>
+                                <div class="company-logo-group company-logo-group_02">
+                                    <div class="company-02">
+                                        <a  href="#"></a>
+                                    </div>
+                                </div>
+                                <div class="company-logo-group company-logo-group_03">
+                                    <div class="company-03">
+                                        <a  href="#"></a>
+                                    </div>
+                                </div>
+                                <div class="company-logo-group company-logo-group_04">
+                                    <div class="company-04">
+                                        <a  href="#"></a>
+                                    </div>
+                                </div>
+                                <div class="company-logo-group company-logo-group_01">
+                                    <div class="company-01">
+                                        <a  href="#"></a>
+                                    </div>
+                                </div>
+                                <div class="company-logo-group company-logo-group_02">
+                                    <div class="company-02">
+                                        <a  href="#"></a>
+                                    </div>
+                                </div>
+                                <div class="company-logo-group company-logo-group_03">
+                                    <div class="company-03">
+                                        <a  href="#"></a>
+                                    </div>
+                                </div>
+                                <div class="company-logo-group company-logo-group_04">
+                                    <div class="company-04">
+                                        <a  href="#"></a>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="company-logo-group company-logo-group_02">
-                                <a class="company-01" href="#">
-                                    <img src="img/premia-logo.svg" width="159" height="60" alt="premia-logo">
-                                </a>
-                            </div>
-                            <div class="company-logo-group company-logo-group_03">
-                                <a class="company-01" href="#">
-                                    <img src="img/leaders-logo.svg" width="195" height="60" alt="leaders-logo">
-                                </a>
-                            </div>
-                            <div class="company-logo-group company-logo-group_04">
-                                <a class="company-01" href="#">
-                                    <img src="img/ulf-logo.svg" width="166" height="60" alt="ulf-logo">
-                                </a>
-                            </div>
-                            <div class="company-logo-group company-logo-group_01">
-                                <a class="company-01" href="#">
-                                    <img src="img/legal-500-logo.svg" width="80" height="60" alt="legal-500-logo">
-                                </a>
-                            </div>
-                            <div class="company-logo-group company-logo-group_02">
-                                <a class="company-01" href="#">
-                                    <img src="img/premia-logo.svg" width="159" height="60" alt="premia-logo">
-                                </a>
-                            </div>
-                            <div class="company-logo-group company-logo-group_03">
-                                <a class="company-01" href="#">
-                                    <img src="img/leaders-logo.svg" width="195" height="60" alt="leaders-logo">
-                                </a>
-                            </div>
-                            <div class="company-logo-group company-logo-group_04">
-                                <a class="company-01" href="#">
-                                    <img src="img/ulf-logo.svg" width="166" height="60" alt="ulf-logo">
-                                </a>
-                            </div>
-                            <div class="company-logo-group company-logo-group_01">
-                                <a class="company-01" href="#">
-                                    <img src="img/legal-500-logo.svg" width="80" height="60" alt="legal-500-logo">
-                                </a>
-                            </div>
-                            <div class="company-logo-group company-logo-group_02">
-                                <a class="company-01" href="#">
-                                    <img src="img/premia-logo.svg" width="159" height="60" alt="premia-logo">
-                                </a>
-                            </div>
-                            <div class="company-logo-group company-logo-group_03">
-                                <a class="company-01" href="#">
-                                    <img src="img/leaders-logo.svg" width="195" height="60" alt="leaders-logo">
-                                </a>
-                            </div>
-                            <div class="company-logo-group company-logo-group_04">
-                                <a class="company-01" href="#">
-                                    <img src="img/ulf-logo.svg" width="166" height="60" alt="ulf-logo">
-                                </a>
-                            </div>
-                        </div>
 
-                      </div>
+                        </div>
                     </div>
 
                 </div>
@@ -213,9 +251,12 @@
                     <div class="footer-left__contact">
                         <div class="footer-left__logo">
                             <a class="footer-left__logo-fb" href="#">
-                                <svg width="39" height="38" viewBox="0 0 39 38" fill="none"xmlns="http://www.w3.org/2000/svg">
+                                <svg width="39" height="38" viewBox="0 0 39 38" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
                                     <g clip-path="url(#clip0_2205_1898)">
-                                        <path d="M38.5 19.1161C38.5 8.55857 29.9934 0 19.5 0C9.00658 0 0.5 8.55857 0.5 19.1161C0.5 28.6575 7.44803 36.5659 16.5312 38V24.6419H11.707V19.1161H16.5312V14.9046C16.5312 10.1136 19.3678 7.46723 23.7078 7.46723C25.7866 7.46723 27.9609 7.84059 27.9609 7.84059V12.545H25.5651C23.2048 12.545 22.4688 14.0185 22.4688 15.5302V19.1161H27.7383L26.8959 24.6419H22.4688V38C31.552 36.5659 38.5 28.6575 38.5 19.1161Z" fill="#24A3FF" />
+                                        <path
+                                            d="M38.5 19.1161C38.5 8.55857 29.9934 0 19.5 0C9.00658 0 0.5 8.55857 0.5 19.1161C0.5 28.6575 7.44803 36.5659 16.5312 38V24.6419H11.707V19.1161H16.5312V14.9046C16.5312 10.1136 19.3678 7.46723 23.7078 7.46723C25.7866 7.46723 27.9609 7.84059 27.9609 7.84059V12.545H25.5651C23.2048 12.545 22.4688 14.0185 22.4688 15.5302V19.1161H27.7383L26.8959 24.6419H22.4688V38C31.552 36.5659 38.5 28.6575 38.5 19.1161Z"
+                                            fill="#24A3FF" />
                                     </g>
                                     <defs>
                                         <clipPath id="clip0_2205_1898">
@@ -226,7 +267,7 @@
                             </a>
                         </div>
                         <div class="footer-left__tel footer_text">
-                            <a  href="tel:+380503901591">+38 (050) 390 15 91</a>
+                            <a href="tel:+380503901591">+38 (050) 390 15 91</a>
                         </div>
                         <div class="footer-left__mail footer_ref">
                             <a href="mailto:contact@hlegals.net">contact@hlegals.net</a>

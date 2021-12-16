@@ -45,19 +45,17 @@
 
 
 }
-@media (max-width: 767px) {
+@media (min-width: 768px) and (max-width: 991px) {
     .partners {
 
         &__group-item {
             width: 50%;
         }
-
     }
 }
 
-@media (max-width: 375px) {
+@media (min-width: 374px) and (max-width: 767px) {
     .partners {
-        
 
         &__group {
             display: flex;
@@ -67,9 +65,11 @@
         &__group-item {
             width: 100%;
         }
+
         &__group-text-inset {
             width: 290px;
         }
+        
         &__group-text {
             padding-bottom: 10px;
             font-size: 18px;

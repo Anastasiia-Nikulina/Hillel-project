@@ -1,5 +1,5 @@
 .about {
-    padding: 76px 0 80px;
+    padding: 81px 0 80px;
 
     &__group {
         display: flex;
@@ -24,6 +24,7 @@
             &:hover {
                 color: $magenta;
             }
+
             &:active {
                 border-color: $magenta;
                 color: $magenta;
@@ -39,17 +40,21 @@
         width: 56.67%;
         align-self: center;
     }
+
     .group__inset {
         width: 633px;
         color: $white;
-        padding-left: 40px;
+        padding-left: 37px;
     }
 
     .group__title {
+        padding-top: 9px;
         font-size: 32px;
         line-height: 38px;
         padding-bottom: 20px;
+        font-weight: 400;
     }
+
     .group__txt {
         font-size: 21px;
         line-height: 30px;
@@ -60,122 +65,144 @@
         position: relative;
         width: 100%;
         height: auto;
-      }
+    }
 
-      .slider input[name="switch"] {
+    .slider input[name="switch"] {
         display: none;
-      }
+    }
 
-      .switch {
+    .switch {
         position: absolute;
-        left: 0;
-        bottom: -41px;
+        left: -19px;
+        bottom: -18px;
         text-align: center;
         width: 100%;
-      }
+    }
 
-      .switch label {
+    .switch label {
         display: inline-block;
-        width: 16px;
-        height: 16px;
+        width: 14px;
+        height: 14px;
         cursor: pointer;
-        margin: 0 7px;
+        margin: 0 5px;
         border-radius: 50%;
         background-color: rgba($color: #24A3FF, $alpha: 0.2);
-      }
+    }
 
-      #btn1:checked~.switch label[for="btn1"] {
+    #btn1:checked~.switch label[for="btn1"] {
         background-color: #24A3FF;
-      }
+    }
 
-      #btn2:checked~.switch label[for="btn2"] {
+    #btn2:checked~.switch label[for="btn2"] {
         background-color: #24A3FF;
-      }
+    }
 
-      #btn3:checked~.switch label[for="btn3"] {
+    #btn3:checked~.switch label[for="btn3"] {
         background-color: #24A3FF;
-      }
-      #btn4:checked~.switch label[for="btn4"] {
-        background-color: #24A3FF;
-      }
+    }
 
-      .slider-inner {
+    #btn4:checked~.switch label[for="btn4"] {
+        background-color: #24A3FF;
+    }
+
+    .slider-inner {
         overflow: hidden;
-      }
+    }
 
-      .slides {
+    .slides {
         display: flex;
         width: 100%;
         transition: all 0.5s;
-
     }
+
     .slider__page {
         display: flex;
         justify-content: center;
-
     }
-
+    .slider__inset-wrap {
+        width: 346px;
+    }
     .slider__inset {
         align-self: center;
         margin-bottom: 20px;
-        width: 335px;
-        padding: 0 20px;
+        width: 299px;
     }
+
     .slider__ref {
         font-weight: 700;
-        font-size: 14px;
+        font-size: 13px;
         line-height: 17px;
         letter-spacing: 1px;
         text-transform: uppercase;
-        color: #F0145A;
-        padding-bottom: 10px;
+        color: $magenta;
     }
+
     .slider__title {
-        font-size: 22px;
-        line-height: 26px;
-        color: #FFFFFF;
-        padding-bottom: 15px;
+        font-size: 20px;
+        line-height: 25px;
+        font-weight: 400;
+        color: $white;
+        padding-bottom: 10px;
+        padding-top: 7px;
+        padding-left: 4px;
     }
+
     .slider__txt {
-        font-size: 18px;
-        line-height: 26px;
-        color: #FFFFFF;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 23px;
+        color: $white;
+        padding-top: 2px;
+        padding-left: 3px;
     }
 
     #btn1:checked~slider-inner slides {
         transform: translate(0);
-      }
+    }
 
     #btn2:checked~.slider-inner .slides {
-    transform: translate(-100%);
+        transform: translate(-100%);
     }
 
     #btn3:checked~.slider-inner .slides {
-    transform: translate(-200%);
+        transform: translate(-200%);
     }
+
     #btn4:checked~.slider-inner .slides {
-    transform: translate(-300%);
+        transform: translate(-300%);
     }
 
-
 }
 
 
-@media (max-width: 767px) {
-
-}
-
-@media (max-width: 375px) {
+@media (min-width: 768px) and (max-width: 991px) {
     .about {
         &__group {
             display: none;
         }
+
+        .slider {
+            display: flex;
+        }
+
+        .slider__inset-wrap {
+            width: 100%;
+        }
+    }
+
+}
+
+@media (min-width: 374px) and (max-width: 767px) {
+    .about {
+        padding: 7px 0 53px;
+
+        &__group {
+            display: none;
+        }
+
         .slider {
             display: flex;
         }
     }
 
-
-
 }
-
